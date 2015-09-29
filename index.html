@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" href="style/animate.css">
+
+
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+
+    <link href='http://www.youziku.com/webfont/CSS/0cab085ef1148a6f1287acdd6704d0a0' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+
+    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+//                anchors: ['indexSection', 'section2', 'section3', 'section4', 'section5', 'footer'],
+                navigation: true,
+                navigationPosition: 'right',
+//                navigationTooltips: ['First page', 'Second page', 'Third and last page']
+                sectionsColor: ['#e5e5e5', '#fff', '#e9e9e9', '#fff', '#e9e9e9', '#fff'],
+                onLeave: function(index, nextIndex, direction){
+                    var leavingSection = $(this);
+                    if(index == 2){
+//                        alert("Section 2 ended loading");
+                        $('#section2 img').addClass('animated fadeOutDown')
+                        ;
+                    };
+                    if(index == 3){
+//                        alert("Section 2 ended loading");
+                        $('#section3 img').addClass('animated fadeOutDown')
+                        ;
+                    };
+                    if(index == 4){
+//                        alert("Section 2 ended loading");
+                        $('#section4 img').addClass('animated fadeOutDown')
+                        ;
+                    };
+                    if(index == 5){
+//                        alert("Section 2 ended loading");
+                        $('#section5 img').addClass('animated fadeOutDown')
+                        ;
+                    };
+                },
+                'afterLoad': function(anchorLink, index){
+                    if(index == 2){
+//                        alert("Section 2 ended loading");
+                        $('#section2 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInLeft')
+                        ;
+                    };
+                    if(index == 3){
+//                        alert("Section 2 ended loading");
+                        $('#section3 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInRight')
+                        ;
+                    };
+                    if(index == 4){
+//                        alert("Section 2 ended loading");
+                        $('#section4 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInLeft')
+                        ;
+                    };
+                    if(index == 5){
+//                        alert("Section 2 ended loading");
+                        $('#section5 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInRight')
+                        ;
+                    };
+                                    }
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section" id="indexSection">
+     <!--   <div class="blk-sidebar">
+            <img class="ui medium centered image" src="images/logo.png">
+        </div>-->
+        <div class="ui padded grid">
+            <div class="three wide mobile two wide tablet one wide computer black column">
+                <img class="ui medium centered image animated fadeInDown" src="images/logo.png" alt=""/>
+            </div>
+            <div class="thirteen wide mobile fourteen wide tablet fifteen wide computer column">
+               <div class="ui page grid bottom-align">
+                   <div class="row">
+                       <h1>
+                       加入FITTING <br>
+                       即刻随身携带你的试衣间 <br>
+                       </h1>
+                   </div>
+                   <div class="row">
+                       <p>独有衣服贴纸让你随时管理自己拥有和喜欢的衣服，<br/>
+                           随时随地收集新衣服，轻松上身尝试各类穿搭，<br/>
+                           和伙伴交流穿着也变得格外轻松有效！</p>
+                   </div>
+                   <img class="ui image" src="images/qrcode.png" alt=""/>
+               </div>
+            </div>
+
+        </div> <!--色块网格-->
+    </div> <!--section1-->
+    <div class="section" id="section2">
+        <div class="ui middle aligned container centered stackable grid container">
+            <div class="six wide column">
+                <img class="hidden ui medium centered image" src="images/ft1.png" alt=""/>
+            </div>
+            <div class="ten wide centered column">
+                <h1 class="chinese">试衣服当然要穿上身</h1>
+                <p>
+                    还在盯着衣服脑补穿上啥样？<br/>
+                    在这里只需动动手指，随时把喜欢的衣服收入囊中，<br/>
+                    还能轻松看到衣服上身效果！
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="ui middle aligned container centered stackable grid container">
+            <div class="ten wide centered column">
+                <h1> 随身携带的专属衣柜</h1>
+                <p>
+                    不管是自己的，还是感兴趣的，<br/>
+                    将衣服做成贴纸随身携带，<br/>
+                    所有衣服尽在掌握，逛街网购聊天随时试！
+                </p>
+            </div>
+            <div class="six wide column">
+                <img class="hidden ui medium centered image" src="images/ft2.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section4">
+        <div class="ui middle aligned container centered stackable grid container">
+            <div class="six wide column">
+                <img class="hidden ui medium centered image" src="images/ft3.png" alt=""/>
+            </div>
+            <div class="ten wide centered column">
+                <h1>直接在照片上交流</h1>
+
+                <p>关注的人发了新照片，喜欢上面的衣服？<br/>拿去试吧！ 把想说的话直接标记在图片上，<br/>交流更便捷！</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="section" id="section5">
+        <div class="ui middle aligned container centered stackable grid container">
+            <div class="ten wide centered column">
+                <h1>分享和发现各种精彩</h1>
+
+                <p>各路达人汇聚，穿搭盛宴，<br> 看看大家都穿什么，怎么穿！<br> 更有丰富的官方趣味活动等你来玩来分享！</p>
+            </div>
+            <div class="six wide column">
+                <img class="hidden ui medium centered image" src="images/ft4.png" alt=""/>
+            </div>
+        </div>
+    </div>
+
+    <div class="section fp-auto-height" id="footer">
+        <div class="ui equal width center aligned grid">
+            <div class="row">
+                <div class="column">
+                    <h1>联系我们</h1>
+                </div>
+            </div>
+            <div class="ui horizontal divider"><i class="tag icon"></i></div>
+            <div class="row">
+                <div class="column">
+                    <p>喜欢FITTING？想加入FITTING？或者希望以任何形式与我们合作，都请随时用下面的联系方式联系我们。
+                        我们同时热切盼望您的宝贵意见和建议。</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column"></div>
+            </div>
+        </div>
+        <div class="ui center aligned divided relaxed grid">
+            <div class="doubling five column row">
+                <div class="column">
+                    <div class="ui icon header">
+                        <i class="grey mail icon"></i>
+                    </div>
+                    <p>SERVICE @ FitTingAPP.com</p>
+                </div>
+                <div class="column">
+                    <div class="ui icon header">
+                        <i class="grey wechat icon"></i>
+                    </div>
+                    <p>aFittingApp</p>
+                </div>
+                <div class="column">
+                    <div class="ui icon header">
+                        <i class="grey weibo icon"></i>
+                    </div>
+                    <p>@ FittingApp</p>
+                </div>
+                <div class="column">
+                    <div class="ui icon header">
+                        <i class="grey pin icon"></i>
+                    </div>
+                    <p>北京市海淀区中关村南大街天作国际2号楼522</p>
+                </div>
+                <div class="column">
+                    <div class="ui icon header">
+                        <i class="grey call icon"></i>
+                    </div>
+                    <p>+86 010 82168821</p>
+                </div>
+            </div>
+            <div class="black row">
+                <div class="column">
+                    <img class="ui image" src="images/logoF.png" alt=""/>
+                    <!--<h1 style="color: #fff">FITTING</h1>-->
+                    <span>FittingApp,Inc. 2015.京ICP备15011700号.</span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+</div>
+
+</body>
+
+
+<!--<script  type="text/javascript">
+    $youziku.load("#fullpage", "da70500140b245068deb3dc5c57acaaf", "CTjxiyuan");
+    /*[$youziku.load("#id2", "da70500140b245068deb3dc5c57acaaf", "CTjxiyuan");]*/
+    /*[$youziku.load(".class1", "da70500140b245068deb3dc5c57acaaf", "CTjxiyuan");]*/
+    /*[$youziku.load(".class1", "da70500140b245068deb3dc5c57acaaf", "CTjxiyuan");]*/
+    /*[．．．]*/
+    $youziku.draw();
+    alert('改字体完成')
+</script>-->
+
+</html>
