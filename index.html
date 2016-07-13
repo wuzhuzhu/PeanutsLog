@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <title></title>
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <link rel="stylesheet" href="style/animate.css">
@@ -11,219 +12,239 @@
     <script src="semantic/dist/semantic.min.js"></script>
 
     <link href='http://www.youziku.com/webfont/CSS/0cab085ef1148a6f1287acdd6704d0a0' rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css"/>
 
     <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
     <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#fullpage').fullpage({
 //                anchors: ['indexSection', 'section2', 'section3', 'section4', 'section5', 'footer'],
-                navigation: true,
+                navigation        : true,
                 navigationPosition: 'right',
+                responsiveWidth: 400,
 //                navigationTooltips: ['First page', 'Second page', 'Third and last page']
-                sectionsColor: ['#e5e5e5', '#fff', '#e9e9e9', '#fff', '#e9e9e9', '#fff'],
-                onLeave: function(index, nextIndex, direction){
+//                sectionsColor: ['#e5e5e5', '#fff', '#e9e9e9', '#fff', '#e9e9e9', '#fff'],
+                onLeave           : function (index, nextIndex, direction) {
                     var leavingSection = $(this);
-                    if(index == 2){
+                    if (index == 2) {
 //                        alert("Section 2 ended loading");
                         $('#section2 img').addClass('animated fadeOutDown')
                         ;
-                    };
-                    if(index == 3){
+                    }
+                    ;
+                    if (index == 3) {
 //                        alert("Section 2 ended loading");
                         $('#section3 img').addClass('animated fadeOutDown')
                         ;
-                    };
-                    if(index == 4){
+                    }
+                    ;
+                    if (index == 4) {
 //                        alert("Section 2 ended loading");
                         $('#section4 img').addClass('animated fadeOutDown')
                         ;
-                    };
-                    if(index == 5){
+                    }
+                    ;
+                    if (index == 5) {
 //                        alert("Section 2 ended loading");
                         $('#section5 img').addClass('animated fadeOutDown')
                         ;
-                    };
+                    }
+                    ;
+                    if (index == 6) {
+//                        alert("Section 2 ended loading");
+                        $('#section6 img').addClass('animated fadeOutDown')
+                        ;
+                    }
+                    ;
                 },
-                'afterLoad': function(anchorLink, index){
-                    if(index == 2){
+                'afterLoad'       : function (anchorLink, index) {
+                    if (index == 2) {
 //                        alert("Section 2 ended loading");
                         $('#section2 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInLeft')
                         ;
-                    };
-                    if(index == 3){
+                    }
+                    ;
+                    if (index == 3) {
 //                        alert("Section 2 ended loading");
                         $('#section3 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInRight')
                         ;
-                    };
-                    if(index == 4){
+                    }
+                    ;
+                    if (index == 4) {
 //                        alert("Section 2 ended loading");
                         $('#section4 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInLeft')
                         ;
-                    };
-                    if(index == 5){
+                    }
+                    ;
+                    if (index == 5) {
 //                        alert("Section 2 ended loading");
                         $('#section5 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInRight')
                         ;
-                    };
-                                    }
+                    }
+                    ;
+                    if (index == 6) {
+//                        alert("Section 2 ended loading");
+                        $('#section6 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInLeft')
+                        ;
+                    }
+                    ;
+                }
             });
         });
     </script>
-    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" href="style/main.css"/>
 </head>
 <body>
 
 <div id="fullpage">
     <div class="section" id="indexSection">
-     <!--   <div class="blk-sidebar">
-            <img class="ui medium centered image" src="images/logo.png">
-        </div>-->
-        <div class="ui padded grid">
-            <div class="three wide mobile two wide tablet one wide computer black column">
-                <img class="ui medium centered image animated fadeInDown" src="images/logo.png" alt=""/>
+        <div class="ui aligned container centered stackable grid container">
+            <div class="computer tablet only row">
+                <img src="images/pn/logo.png" class="ui centered image"/>
             </div>
-            <div class="thirteen wide mobile fourteen wide tablet fifteen wide computer column">
-               <div class="ui page grid bottom-align">
-                   <div class="row">
-                       <h1>
-                       加入FITTING <br>
-                       即刻随身携带你的试衣间 <br>
-                       </h1>
-                   </div>
-                   <div class="row">
-                       <p>独有衣服贴纸让你随时管理自己拥有和喜欢的衣服，<br/>
-                           随时随地收集新衣服，轻松上身尝试各类穿搭，<br/>
-                           和伙伴交流穿着也变得格外轻松有效！</p>
-                   </div>
-                   <img class="ui image" src="images/qrcode.png" alt=""/>
-               </div>
+            <div class="computer tablet only row">
+                <img src="images/pn/download-button.png" alt="" class="ui centered image">
             </div>
+            <div class="computer tablet only row">
+                <img src="images/pn/qr-code.png" alt="" class="ui centered image">
+            </div>
+            <div class="mobile only row">
+                <img src="images/pn/logo.png" class="logo-img"/>
+            </div>
+            <div class="mobile only row">
+                <img src="images/pn/download-button.png" alt="" class="dl-img" />
+            </div>
+            <div class="mobile only row">
+                <img src="images/pn/qr-code.png" alt="" class="qr-img" />
+            </div>
+        </div>
 
-        </div> <!--色块网格-->
     </div> <!--section1-->
     <div class="section" id="section2">
-        <div class="ui middle aligned container centered stackable grid container">
-            <div class="six wide column">
-                <img class="hidden ui medium centered image" src="images/ft1.png" alt=""/>
+        <div class="ui middle aligned container mobile vertically reversed centered stackable grid container">
+            <div class="eight wide doubling column">
+                <img class="hidden ui centered product-preview image" src="images/pn/phonecsreen-1.png" alt=""/>
             </div>
-            <div class="ten wide centered column">
-                <h1 class="chinese">试衣服当然要穿上身</h1>
-                <p>
-                    还在盯着衣服脑补穿上啥样？<br/>
-                    在这里只需动动手指，随时把喜欢的衣服收入囊中，<br/>
-                    还能轻松看到衣服上身效果！
-                </p>
+            <div class= "eight wide middle aligned doubling column">
+                <h1 class="chinese">智能日志</h1>
+                <h3>
+                    私密与分享一体<br/>
+                    超实用日历和分类管理<br/>
+                </h3>
             </div>
         </div>
     </div>
     <div class="section" id="section3">
-        <div class="ui middle aligned container centered stackable grid container">
-            <div class="ten wide centered column">
-                <h1> 随身携带的专属衣柜</h1>
-                <p>
-                    不管是自己的，还是感兴趣的，<br/>
-                    将衣服做成贴纸随身携带，<br/>
-                    所有衣服尽在掌握，逛街网购聊天随时试！
-                </p>
+        <div class="ui middle aligned container centered mobile vertically reversed stackable grid container">
+            <div class="eight wide middle aligned centered column">
+                <h1>全面记录</h1>
+                <h3>
+                    智能记录<br/>
+                    时间、地点、天气等信息
+                </h3>
             </div>
-            <div class="six wide column">
-                <img class="hidden ui medium centered image" src="images/ft2.png" alt=""/>
+            <div class="eight wide column">
+                <img class="hidden ui medium centered product-preview image" src="images/pn/phonecsreen-2.png" alt=""/>
             </div>
         </div>
     </div>
     <div class="section" id="section4">
         <div class="ui middle aligned container centered stackable grid container">
-            <div class="six wide column">
-                <img class="hidden ui medium centered image" src="images/ft3.png" alt=""/>
+            <div class="eight wide column">
+                <img class="hidden ui medium centered product-preview image" src="images/pn/phonecsreen-3.png" alt=""/>
             </div>
-            <div class="ten wide centered column">
-                <h1>直接在照片上交流</h1>
+            <div class="eight wide middle aligned centered column">
+                <h1>随心混搭</h1>
 
-                <p>关注的人发了新照片，喜欢上面的衣服？<br/>拿去试吧！ 把想说的话直接标记在图片上，<br/>交流更便捷！</p>
+                <h3>
+                    文字+图片+视频混搭
+                </h3>
             </div>
         </div>
 
     </div>
     <div class="section" id="section5">
         <div class="ui middle aligned container centered stackable grid container">
-            <div class="ten wide centered column">
-                <h1>分享和发现各种精彩</h1>
+            <div class="eight wide middle aligned centered column">
+                <h1>加密隐私</h1>
 
-                <p>各路达人汇聚，穿搭盛宴，<br> 看看大家都穿什么，怎么穿！<br> 更有丰富的官方趣味活动等你来玩来分享！</p>
+                <h3>私密日志 安全贴心</h3>
             </div>
-            <div class="six wide column">
-                <img class="hidden ui medium centered image" src="images/ft4.png" alt=""/>
+            <div class="eight wide column">
+                <img class="hidden ui medium centered product-preview image" src="images/pn/phonecsreen-4.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section6">
+        <div class="ui middle aligned container centered stackable grid container">
+            <div class="eight wide column">
+                <img class="hidden ui medium centered product-preview image" src="images/pn/phonecsreen-5.png" alt=""/>
+            </div>
+            <div class="eight wide middle aligned centered column">
+                <h1>分享精彩</h1>
+
+                <h3>
+                    私密分享随心记 <br />
+                    留住我们的远方以及苟且
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div id="section7" class="section">
+        <div class="two column stackable row">
+            <div class="column">
+                <div class="row">
+                    <img src="images/pn/logo.png" class="ui centered image"/>
+                </div>
+                <div class="row">
+                    <img src="images/pn/download-button.png" alt="" class="ui centered image">
+                </div>
+            </div>
+            <div class="column">
+                <div class="computer tablet only row">
+                    <img src="images/pn/qr-code-white.png" alt="" class="ui centered image">
+                </div>
             </div>
         </div>
     </div>
 
     <div class="section fp-auto-height" id="footer">
         <div class="ui equal width center aligned grid">
-            <div class="row">
-                <div class="column">
-                    <h1>联系我们</h1>
+
+            <div class="ui center aligned">
+                <p>联系我们</p>
+                <!--<div class="ui horizontal divider"><i class="tag icon"></i></div>-->
+                <div class="ui center aligned divided relaxed fluid grid">
+                    <div class="doubling five column row">
+                        <div class="column">
+                            <p>SERVICE @ FitTingAPP.com</p>
+                        </div>
+                        <div class="column">
+                            <p>aFittingApp</p>
+                        </div>
+                        <div class="column">
+                            <p>@ FittingApp</p>
+                        </div>
+                        <div class="column">
+                            <p>北京市海淀区中关村南大街天作国际2号楼522</p>
+                        </div>
+                        <div class="column">
+                            <p>+86 010 82168821</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="ui horizontal divider"><i class="tag icon"></i></div>
-            <div class="row">
+            <div class="last row">
                 <div class="column">
-                    <p>喜欢FITTING？想加入FITTING？或者希望以任何形式与我们合作，都请随时用下面的联系方式联系我们。
-                        我们同时热切盼望您的宝贵意见和建议。</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column"></div>
-            </div>
-        </div>
-        <div class="ui center aligned divided relaxed grid">
-            <div class="doubling five column row">
-                <div class="column">
-                    <div class="ui icon header">
-                        <i class="grey mail icon"></i>
-                    </div>
-                    <p>SERVICE @ FitTingAPP.com</p>
-                </div>
-                <div class="column">
-                    <div class="ui icon header">
-                        <i class="grey wechat icon"></i>
-                    </div>
-                    <p>aFittingApp</p>
-                </div>
-                <div class="column">
-                    <div class="ui icon header">
-                        <i class="grey weibo icon"></i>
-                    </div>
-                    <p>@ FittingApp</p>
-                </div>
-                <div class="column">
-                    <div class="ui icon header">
-                        <i class="grey pin icon"></i>
-                    </div>
-                    <p>北京市海淀区中关村南大街天作国际2号楼522</p>
-                </div>
-                <div class="column">
-                    <div class="ui icon header">
-                        <i class="grey call icon"></i>
-                    </div>
-                    <p>+86 010 82168821</p>
-                </div>
-            </div>
-            <div class="black row">
-                <div class="column">
-                    <img class="ui image" src="images/logoF.png" alt=""/>
+                    <!--<img class="ui image" src="images/logoF.png" alt=""/>-->
                     <!--<h1 style="color: #fff">FITTING</h1>-->
                     <span>FittingApp,Inc. 2015.京ICP备15011700号.</span>
                 </div>
             </div>
         </div>
-
-
-
-
     </div>
 
 
