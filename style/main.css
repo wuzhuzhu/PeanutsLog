@@ -130,17 +130,17 @@ p {
 #footer .doubling.five.column.row {
   padding: 5px auto;
 }
-#footer .last.row {
-  padding-bottom: 15px;
+#footer .last.grid {
+  padding-bottom: 30px;
   padding-top: 5px;
 }
-#footer .last.row img {
+#footer .last.grid img {
   margin: 0px 0 14px 0;
   margin-left: auto;
   margin-right: auto;
   right: auto;
 }
-#footer .last.row span {
+#footer .last.grid span {
   font-style: italic;
   color: #909090;
 }
