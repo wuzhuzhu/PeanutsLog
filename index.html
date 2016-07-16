@@ -24,38 +24,38 @@
 //                anchors: ['indexSection', 'section2', 'section3', 'section4', 'section5', 'footer'],
                 navigation        : true,
                 navigationPosition: 'right',
-                responsiveWidth: 400,
+                responsiveWidth: 668,
 //                navigationTooltips: ['First page', 'Second page', 'Third and last page']
 //                sectionsColor: ['#e5e5e5', '#fff', '#e9e9e9', '#fff', '#e9e9e9', '#fff'],
                 onLeave           : function (index, nextIndex, direction) {
                     var leavingSection = $(this);
                     if (index == 2) {
 //                        alert("Section 2 ended loading");
-                        $('#section2 img').addClass('animated fadeOutDown')
+                        $('#section2 img').addClass('animated fadeOut')
                         ;
                     }
                     ;
                     if (index == 3) {
 //                        alert("Section 2 ended loading");
-                        $('#section3 img').addClass('animated fadeOutDown')
+                        $('#section3 img').addClass('animated fadeOut')
                         ;
                     }
                     ;
                     if (index == 4) {
 //                        alert("Section 2 ended loading");
-                        $('#section4 img').addClass('animated fadeOutDown')
+                        $('#section4 img').addClass('animated fadeOut')
                         ;
                     }
                     ;
                     if (index == 5) {
 //                        alert("Section 2 ended loading");
-                        $('#section5 img').addClass('animated fadeOutDown')
+                        $('#section5 img').addClass('animated fadeOut')
                         ;
                     }
                     ;
                     if (index == 6) {
 //                        alert("Section 2 ended loading");
-                        $('#section6 img').addClass('animated fadeOutDown')
+                        $('#section6 img').addClass('animated fadeOut')
                         ;
                     }
                     ;
@@ -63,31 +63,31 @@
                 'afterLoad'       : function (anchorLink, index) {
                     if (index == 2) {
 //                        alert("Section 2 ended loading");
-                        $('#section2 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInLeft')
+                        $('#section2 img').removeClass('animated fadeOut').removeClass('hidden').addClass('animated fadeInLeft')
                         ;
                     }
                     ;
                     if (index == 3) {
 //                        alert("Section 2 ended loading");
-                        $('#section3 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInRight')
+                        $('#section3 img').removeClass('animated fadeOut').removeClass('hidden').addClass('animated fadeInRight')
                         ;
                     }
                     ;
                     if (index == 4) {
 //                        alert("Section 2 ended loading");
-                        $('#section4 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInLeft')
+                        $('#section4 img').removeClass('animated fadeOut').removeClass('hidden').addClass('animated fadeInLeft')
                         ;
                     }
                     ;
                     if (index == 5) {
 //                        alert("Section 2 ended loading");
-                        $('#section5 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInRight')
+                        $('#section5 img').removeClass('animated fadeOut').removeClass('hidden').addClass('animated fadeInRight')
                         ;
                     }
                     ;
                     if (index == 6) {
 //                        alert("Section 2 ended loading");
-                        $('#section6 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInLeft')
+                        $('#section6 img').removeClass('animated fadeOut').removeClass('hidden').addClass('animated fadeInLeft')
                         ;
                     }
                     ;
@@ -125,10 +125,10 @@
     </div> <!--section1-->
     <div class="section" id="section2">
         <div class="ui middle aligned container mobile vertically reversed centered stackable grid container">
-            <div class="eight wide doubling column">
+            <div class="ten wide doubling column">
                 <img class="hidden ui medium centered product-preview image" src="images/pn/phonecsreen-1.png" alt=""/>
             </div>
-            <div class= "eight wide middle aligned doubling column">
+            <div class= "six wide doubling center-on-mobile column">
                 <h1 class="chinese">智能日志</h1>
                 <h3>
                     私密与分享一体<br/>
@@ -139,24 +139,24 @@
     </div>
     <div class="section" id="section3">
         <div class="ui middle aligned container centered mobile vertically reversed stackable grid container">
-            <div class="eight wide middle aligned centered column">
+            <div class="six wide center-on-mobile centered column">
                 <h1>全面记录</h1>
                 <h3>
                     智能记录<br/>
                     时间、地点、天气等信息
                 </h3>
             </div>
-            <div class="eight wide column">
+            <div class="ten wide column">
                 <img class="hidden ui medium centered product-preview image" src="images/pn/phonecsreen-2.png" alt=""/>
             </div>
         </div>
     </div>
     <div class="section" id="section4">
-        <div class="ui middle aligned container centered stackable grid container">
-            <div class="eight wide column">
+        <div class="ui middle aligned container centered mobile vertically reversed stackable grid container">
+            <div class="ten wide column">
                 <img class="hidden ui medium centered product-preview image" src="images/pn/phonecsreen-3.png" alt=""/>
             </div>
-            <div class="eight wide middle aligned centered column">
+            <div class="six wide center-on-mobile centered column">
                 <h1>随心混搭</h1>
                 <h3>
                     文字+图片+视频混搭
@@ -166,23 +166,23 @@
 
     </div>
     <div class="section" id="section5">
-        <div class="ui middle aligned container centered stackable grid container">
-            <div class="eight wide middle aligned centered column">
+        <div class="ui middle aligned container centered mobile vertically reversed stackable grid container">
+            <div class="six wide center-on-mobile centered column">
                 <h1>加密隐私</h1>
 
                 <h3>私密日志 安全贴心</h3>
             </div>
-            <div class="eight wide column">
+            <div class="ten wide column">
                 <img class="hidden ui medium centered product-preview image" src="images/pn/phonecsreen-4.png" alt=""/>
             </div>
         </div>
     </div>
     <div class="section" id="section6">
-        <div class="ui middle aligned container centered stackable grid container">
-            <div class="eight wide column">
+        <div class="ui middle aligned container centered mobile vertically reversed stackable grid container">
+            <div class="ten wide column">
                 <img class="hidden ui medium centered product-preview image" src="images/pn/phonecsreen-5.png" alt=""/>
             </div>
-            <div class="eight wide middle aligned centered column">
+            <div class="six wide center-on-mobile centered column">
                 <h1>分享精彩</h1>
 
                 <h3>
@@ -204,25 +204,28 @@
             </div>
             <div class="column">
                 <div class="computer tablet only row">
-                    <img src="images/pn/qr-code-white.png" alt="" class="ui centered image">
+                    <img src="images/pn/qr-code-black.png" alt="" class="ui centered image">
                 </div>
             </div>
         </div>
     </div>
 
     <div class="section fp-auto-height" id="footer">
-        <div class="ui equal width center aligned grid">
+        <div class="five-equal">
+
+        </div>
+        <div class="ui equal width center aligned container grid">
                 <p>联系我们</p>
             <!--<div class="ui horizontal divider"><i class="tag icon"></i></div>-->
             <div class="doubling four column row">
                 <div class="column">
-                    <a href="mailto:rui@peanutslog.com">Rui@PeanutsLog.com</a>
+                    <a href="mailto:rui@peanutslog.com">邮箱:Rui@PeanutsLog.com</a>
                 </div>
                 <div class="column">
                     <p>微信订阅号:花生日志</p>
                 </div>
                 <div class="column">
-                    <a href="">@花生日志</a>
+                    <a href="">微博:@花生日志</a>
                 </div>
                 <div class="column">
                     <p>QQ群:565185271</p>
