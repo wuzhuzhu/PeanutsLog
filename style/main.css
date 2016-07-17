@@ -33,11 +33,6 @@ h3 {
   }
   img {
     max-width: 70% !important;
-    max-height: 70% !important;
-  }
-  img .qr-img {
-    width: 250px !important;
-    height: 250px !important;
   }
 }
 p {
@@ -59,11 +54,15 @@ p {
   /*padding: 30% 0 0 0;*/
 }
 #indexSection img {
-  margin: 5px 0;
+  margin-bottom: 15px;
 }
 #indexSection .qr-img {
   width: 220px;
   height: 220px;
+}
+#indexSection .logo-img {
+  width: 220px !important;
+  height: 68px !important;
 }
 #section2 {
   background: #ffffff;
